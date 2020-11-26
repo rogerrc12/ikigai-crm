@@ -1,11 +1,9 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parser from "react-html-parser"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import parser from "react-html-parser";
 
-import About1 from "../../assets/images/resource/about-1.jpg"
-import WebIcon4 from "../../assets/images/icons/web-4.png"
-import WebIcon5 from "../../assets/images/icons/web-5.png"
-import Bg2 from "../../assets/images/background/2.jpg"
+import About1 from "../../assets/images/resource/about-1.png";
+import Bg2 from "../../assets/images/background/2.png";
 
 const Different = () => {
   const data = useStaticQuery(graphql`
@@ -26,46 +24,43 @@ const Different = () => {
         }
       }
     }
-  `)
+  `);
 
   const {
     wordpress: { diferencia },
-  } = data
+  } = data;
 
   return (
-    <section className="about-section">
-      <div className="auto-container">
+    <section className='about-section'>
+      <div className='auto-container'>
         {/* Title Box */}
-        <div className="title-box text-center">
-          <div className="title">Acerca de Ikigai CRM</div>
+        <div className='title-box text-center'>
+          <div className='title'>Acerca de Ikigai CRM</div>
           <h2>{diferencia.title}</h2>
           {parser(diferencia.content)}
         </div>
-        <div className="row clearfix">
+        <div className='row clearfix'>
           {/* Image Column */}
-          <div className="image-column col-lg-6 col-md-12 col-sm-12">
-            <div className="image">
-              <img src={About1} alt="cerca" />
+          <div className='image-column col-lg-6 col-md-12 col-sm-12'>
+            <div className='image'>
+              <img src={About1} alt='cerca' />
             </div>
           </div>
           {/* Content Column */}
-          <div className="content-column col-lg-6 col-md-12 col-sm-12">
-            <div className="inner-column">
+          <div className='content-column col-lg-6 col-md-12 col-sm-12'>
+            <div className='inner-column'>
               {/* Web Block */}
-              {diferencia.details.benefits.map(benefit => (
-                <div className="web-block style-two" key={benefit.title}>
-                  <div className="inner-box">
-                    <div className="content">
-                      <div className="icon-box">
-                        <span className="icon">
-                          <img
-                            src={benefit.icon.sourceUrl}
-                            alt={benefit.title}
-                          />
+              {diferencia.details.benefits.map((benefit) => (
+                <div className='web-block style-two' key={benefit.title}>
+                  <div className='inner-box'>
+                    <div className='content'>
+                      <div className='icon-box'>
+                        <span className='icon'>
+                          <img src={benefit.icon.sourceUrl} alt={benefit.title} />
                         </span>
                       </div>
                       <h5>{benefit.title}</h5>
-                      <div className="text">{benefit.description}</div>
+                      <div className='text'>{benefit.description}</div>
                     </div>
                   </div>
                 </div>
@@ -74,12 +69,12 @@ const Different = () => {
           </div>
         </div>
         {/* Lower Image */}
-        <div className="lower-image">
-          <img src={Bg2} alt="background2" />
+        <div className='lower-image'>
+          <img src={Bg2} alt='background2' />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Different
+export default Different;

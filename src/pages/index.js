@@ -8,12 +8,12 @@ import CallToAction from "../components/callToAction";
 import Management from "../components/home/management";
 import Support from "../components/home/support";
 import Testimonial from "../components/testimonial";
-import Pricing from "../components/pricing";
+// import Pricing from "../components/pricing";
 import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Inicio" />
+    <SEO title='Inicio' />
 
     <Banner />
     <Benefits />
@@ -24,7 +24,7 @@ const IndexPage = () => (
     <CallToAction />
 
     <Testimonial />
-    <Pricing />
+    {/* <Pricing /> */}
   </Layout>
 );
 

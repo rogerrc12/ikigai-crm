@@ -12,11 +12,13 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Footer from "./footer";
 import Whatsapp from "./whatsapp";
+import SocialIcons from "./SocialMediaButtons";
 import "../assets/css/font-awesome.css";
 import "../assets/css/flaticon.css";
 import "../assets/css/bootstrap.css";
 import "../assets/css/main.css";
 import "../assets/css/responsive.css";
+import "../assets/css/custom.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,11 +32,12 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="page-wrapper">
+    <div className='page-wrapper'>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
       <Whatsapp />
+      <SocialIcons />
     </div>
   );
 };

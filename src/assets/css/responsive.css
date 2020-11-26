@@ -209,8 +209,13 @@
     left: 0px;
   }
 
+  .collaborate-section {
+    padding: 80px 0 40px;
+  }
+
   .collaborate-section .image-column .inner-column {
     margin-left: 0px;
+    padding-top: 20px;
     text-align: center;
   }
 
@@ -830,6 +835,12 @@
 
   .progress-section {
     overflow: hidden;
+    padding: 60px 0 60px;
+  }
+
+  .web-block .inner-box .icon-box:before {
+    height: 20px;
+    width: 20px;
   }
 
   .collaborate-section .content-column .progress-block .inner-box .upper-box {

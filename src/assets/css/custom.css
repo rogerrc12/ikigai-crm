@@ -1,0 +1,45 @@
+.float-social {
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  padding: 5px 7px 5px 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #563ef1;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.float-social svg {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 2px 0;
+}
+@media screen and (min-width: 992px) {
+  .float-social svg {
+    font-size: 1.5rem;
+  }
+}
+
+.icon-box img {
+  width: 100%;
+  max-width: 1.75rem;
+}
+
+.icon-box .icon-box-personalizado {
+  max-width: 1.4rem;
+}
+
+.crm-box h3 {
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+}
+
+.about-section .lower-image {
+  z-index: 1;
+}
+
+.btn-aquamarine {
+  background-color: #03e1b9;
+}
