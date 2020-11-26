@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import PageHeader from "../components/pageHeader";
 import SEO from "../components/seo";
 import PostList from "../components/blog/postList";
@@ -11,12 +11,12 @@ const Blog = (props) => {
 
   return (
     <Layout>
-      <SEO title="Blog - Ikigai CRM" />
-      <PageHeader title="Blog" />
+      <SEO title='Blog - Ikigai CRM' />
+      <PageHeader title='Blog' />
 
-      <div className="sidebar-page-container">
-        <div className="auto-container">
-          <div className="row clearfix">
+      <div className='sidebar-page-container'>
+        <div className='auto-container'>
+          <div className='row clearfix'>
             {/* Content Side */}
             <PostList posts={posts} pageContext={props.pageContext} />
             {/* Sidebar Side */}
