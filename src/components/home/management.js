@@ -10,7 +10,7 @@ const Management = () => {
   const data = useStaticQuery(graphql`
     {
       wordpress {
-        gestionBy(id: "cG9zdDo2Nw==") {
+        gestion(id: "cG9zdDo2Nw==") {
           content
           title
           additionals {
@@ -23,7 +23,7 @@ const Management = () => {
   `);
 
   const {
-    wordpress: { gestionBy: gestion },
+    wordpress: { gestion },
   } = data;
 
   return (

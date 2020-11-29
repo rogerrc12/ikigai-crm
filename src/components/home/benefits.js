@@ -11,19 +11,18 @@ import officeIcon from "../../assets/images/icons/oficina.png";
 
 const Benefits = () => {
   const {
-    wordpress: {
-      beneficios: { nodes: beneficios },
-    },
+    wordpress: { eleccion },
   } = useStaticQuery(graphql`
     {
       wordpress {
-        beneficios {
-          nodes {
-            title
-            content
-            slug
-            icon {
-              iconname
+        eleccion(id: "cG9zdDo5OA==") {
+          title
+          beneficios {
+            subtitle
+            beneficiosList {
+              title
+              icon
+              content
             }
           }
         }
@@ -38,29 +37,29 @@ const Benefits = () => {
       <div className='auto-container'>
         {/* Sec Title */}
         <div className='sec-title centered'>
-          <div className='title'>¿Por qué elegir Ikigai CRM? </div>
-          <h2>Porque captura, procesa y gestiona la información vital de tu negocio.</h2>
+          <div className='title'>{eleccion.beneficios.subtitle}</div>
+          <h2>{eleccion.title}</h2>
         </div>
         <div className='row clearfix'>
           {/* Featured Block */}
-          {beneficios.map((beneficio) => (
-            <div className='featured-block col-lg-3 col-md-6 col-sm-12' key={beneficio.slug}>
+          {eleccion.beneficios.beneficiosList.map((beneficio) => (
+            <div className='featured-block col-lg-3 col-md-6 col-sm-12' key={beneficio.title}>
               <div className='inner-box wow fadeInLeft' data-wow-delay='0ms' data-wow-duration='1500ms'>
                 <div className='icon-box'>
                   <img
                     src={
-                      beneficio.icon.iconname === "facil"
+                      beneficio.icon === "facil"
                         ? facilIcon
-                        : beneficio.icon.iconname === "personalizado"
+                        : beneficio.icon === "personalizado"
                         ? personalizadoIcon
-                        : beneficio.icon.iconname === "datos"
+                        : beneficio.icon === "datos"
                         ? datosIcon
-                        : beneficio.icon.iconname === "oficina"
+                        : beneficio.icon === "oficina"
                         ? officeIcon
                         : null
                     }
                     alt='icon'
-                    className={beneficio.icon.iconname === "personalizado" ? "icon-box-personalizado" : ""}
+                    className={beneficio.icon === "personalizado" ? "icon-box-personalizado" : ""}
                   />
                 </div>
                 <h5>{beneficio.title}</h5>

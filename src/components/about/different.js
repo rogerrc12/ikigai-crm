@@ -20,6 +20,14 @@ const Different = () => {
               }
               title
             }
+            imagenes {
+              imagenArriba {
+                sourceUrl
+              }
+              imagenDebajo {
+                sourceUrl
+              }
+            }
           }
         }
       }
@@ -30,20 +38,22 @@ const Different = () => {
     wordpress: { diferencia },
   } = data;
 
+  console.log(diferencia);
+
   return (
     <section className='about-section'>
       <div className='auto-container'>
         {/* Title Box */}
         <div className='title-box text-center'>
           <div className='title'>Acerca de Ikigai CRM</div>
-          <h2>{diferencia.title}</h2>
-          {parser(diferencia.content)}
+          <h2 style={{ marginBottom: 10 }}>{diferencia.title}</h2>
+          <div className='text'>{parser(diferencia.content)}</div>
         </div>
         <div className='row clearfix'>
           {/* Image Column */}
           <div className='image-column col-lg-6 col-md-12 col-sm-12'>
             <div className='image'>
-              <img src={About1} alt='cerca' />
+              <img src={diferencia.details.imagenes.imagenArriba.sourceUrl} alt='cerca' />
             </div>
           </div>
           {/* Content Column */}
@@ -70,7 +80,7 @@ const Different = () => {
         </div>
         {/* Lower Image */}
         <div className='lower-image'>
-          <img src={Bg2} alt='background2' />
+          <img src={diferencia.details.imagenes.imagenDebajo.sourceUrl} alt='background2' />
         </div>
       </div>
     </section>
