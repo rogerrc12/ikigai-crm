@@ -1,10 +1,10 @@
 import React from "react";
-import { ImWhatsapp } from "react-icons/im";
+import { SiMessenger } from "react-icons/si";
 
 const Whatsapp = () => {
   return (
-    <a href="https://wa.link/m7po8f" rel="noopener noreferrer" target="_blank" className="whatsapp-btn">
-      <ImWhatsapp />
+    <a href='https://m.me/Ikigaicrm' rel='noopener noreferrer' target='_blank' className='messenger-btn'>
+      <SiMessenger />
     </a>
   );
 };
