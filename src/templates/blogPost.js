@@ -78,10 +78,10 @@ const Post = (props) => {
         <div className='pattern-layer titlt' data-tilt data-tilt-max={2} style={{ backgroundImage: "url(images/background/pattern-24.png)" }} />
         <div className='auto-container'>
           <div className='inner-container'>
-            <h4>Partner with Pixeld to succeed online</h4>
-            <div className='text'>Getting started is easy, obligation and cost free.</div>
-            <a href='/#' className='theme-btn btn-style-four'>
-              <span className='txt'>Get Started free</span>
+            <h4>Quiero aumentar mis ventas, quiero fidelizar mis clientes</h4>
+            <div className='text'>Empieza ahora con nosotros.</div>
+            <a className='theme-btn btn-style-four' href='https://calendly.com/ventas-ikigaicrm/consultoria-ikgai-crm?month=2020-10' target='_blank' rel='noopener noreferrer'>
+              <span className='txt'>Obtener una demostración</span>
             </a>
           </div>
         </div>
