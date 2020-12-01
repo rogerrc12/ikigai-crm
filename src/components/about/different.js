@@ -2,9 +2,6 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import parser from "react-html-parser";
 
-import About1 from "../../assets/images/resource/about-1.png";
-import Bg2 from "../../assets/images/background/2.png";
-
 const Different = () => {
   const data = useStaticQuery(graphql`
     {

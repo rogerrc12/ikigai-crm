@@ -5,7 +5,7 @@ import parser from "react-html-parser";
 import Pattern17 from "../../assets/images/background/pattern-17.png";
 import Pattern18 from "../../assets/images/background/pattern-18.png";
 import Pattern14 from "../../assets/images/background/pattern-14.png";
-import Business2 from "../../assets/images/resource/business-2.png";
+// import Business2 from "../../assets/images/resource/business-2.png";
 
 const Story = () => {
   const {
