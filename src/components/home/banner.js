@@ -24,17 +24,11 @@ const banner = () => {
             <div className='inner-column'>
               <h1>Gestiona la relación con tus clientes.</h1>
               <div className='text'>
-                En la actualidad Ikigai CRM está siendo usada por emprendedores y empresas para administrar de manera rápida y efectiva su negocio en
-                línea. Con nuestro conjunto completo de soluciones de ventas, marketing y soporte, puedes concentrarte en lo que más te importa:
-                convertir oportunidades en ventas.
+                En la actualidad Ikigai CRM está siendo usada por emprendedores y empresas para administrar de manera rápida y efectiva su negocio en línea. Con nuestro conjunto
+                completo de soluciones de ventas, marketing y soporte, puedes concentrarte en lo que más te importa: convertir oportunidades en ventas.
               </div>
-              <a
-                href='https://calendly.com/ventas-ikigaicrm/consultoria-ikgai-crm?month=2020-10'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='theme-btn btn-style-two'
-              >
-                <span className='txt'>Obtener una Demostración</span>
+              <a href='https://calendly.com/ventas-ikigaicrm/consultoria-ikgai-crm?month=2020-10' target='_blank' rel='noopener noreferrer' className='theme-btn btn-style-two'>
+                <span className='txt'>Solicitar visita guiada</span>
               </a>
             </div>
           </div>

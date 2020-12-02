@@ -18,7 +18,7 @@ const Contacto = () => {
           <div className='inner-container'>
             <h4>Quiero aumentar mis ventas, quiero fidelizar mis clientes</h4>
             <a className='theme-btn btn-style-four' href='https://calendly.com/ventas-ikigaicrm/consultoria-ikgai-crm?month=2020-10' target='_blank' rel='noopener noreferrer'>
-              <span className='txt'>Obtener una demostración</span>
+              <span className='txt'>Solicitar visita guiada</span>
             </a>
           </div>
         </div>
